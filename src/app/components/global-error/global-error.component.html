@@ -1,0 +1,5 @@
+<div *ngIf="errorSevice.error$" style="background-color: red">
+  {{ errorSevice.error$ | async }}Помилка при отриманні даних
+
+  <button (click)="errorSevice.clear()">&times;</button>
+</div>
